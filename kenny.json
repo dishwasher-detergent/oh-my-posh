@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
-            "alignment": "left",
+            "alignment": "right",
             "segments": [
                 {
                     "type": "spotify",
@@ -18,15 +18,41 @@
             "type": "prompt"
         },
         {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "background": "#cb997e",
+                    "foreground": "#000000",
+                    "style": "plain",
+                    "template": " {{ .UserName }}@{{ .HostName }}/",
+                    "type": "session"
+                },
+                {
+                    "background": "#cb997e",
+                    "foreground": "#000000",
+                    "properties": {
+                        "style": "folder"
+                    },
+                    "style": "plain",
+                    "template": "{{ .Path }}/ ",
+                    "type": "path"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
             "alignment": "right",
             "segments": [
                 {
-                    "type": "time",
-                    "style": "plain",
                     "foreground": "#f8fafc",
                     "properties": {
-                      "time_format": "15:04:05"
-                    }
+                        "style": "roundrock",
+                        "threshold": 0
+                    },
+                    "style": "diamond",
+                    "template": " {{ .FormattedMs }} ",
+                    "type": "executiontime"
                 }
             ],
             "type": "prompt"
@@ -35,16 +61,6 @@
             "alignment": "left",
             "newline": true,
             "segments": [
-                {
-                    "background": "#cb997e",
-                    "foreground": "#000000",
-                    "properties": {
-                        "style": "folder"
-                    },
-                    "style": "plain",
-                    "template": " {{ .Path }}/ ",
-                    "type": "path"
-                },
                 {
                     "background": "#ddbea9",
                     "foreground": "#000000",
@@ -68,17 +84,18 @@
             "alignment": "right",
             "segments": [
                 {
-                    "foreground": "#f8fafc",
+                    "background": "#502eca",
+                    "foreground": "#ffffff",
                     "properties": {
-                        "style": "roundrock",
-                        "threshold": 0
+                        "fetch_version": true
                     },
-                    "style": "diamond",
-                    "template": " {{ .FormattedMs }} ",
-                    "type": "executiontime"
+                    "style": "plain",
+                    "template": " \uE77F {{ .Full }} ",
+                    "type": "dotnet"
                 },
                 {
-                    "background": "#6a994e",
+                    "background": "#8bbf45",
+                    "foreground": "#ffffff",
                     "properties": {
                         "fetch_version": true
                     },
@@ -87,7 +104,8 @@
                     "type": "node"
                 },
                 {
-                    "background": "#bc4749",
+                    "background": "#c40011",
+                    "foreground": "#ffffff",
                     "properties": {
                         "fetch_version": true
                     },
@@ -104,9 +122,12 @@
             "segments": [
                 {
                     "foreground": "#ffe8d6",
+                    "properties": {
+                        "time_format": "January 2, 2006 @ 15:04:05"
+                    },
                     "style": "plain",
-                    "template": "{{ .UserName }}@{{ .HostName }}:",
-                    "type": "session"
+                    "template": "{{ .CurrentDate | date .Format }}:",
+                    "type": "time"
                 }
             ],
             "type": "prompt"
