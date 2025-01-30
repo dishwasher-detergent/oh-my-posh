@@ -122,7 +122,7 @@
           },
           "style": "plain",
           "template": "  {{ .Full }} ",
-          "type": "angular",
+          "type": "angular"
         }
       ],
       "type": "prompt"
