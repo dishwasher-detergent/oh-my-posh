@@ -117,9 +117,6 @@
         },
         {
           "foreground": "p:angular",
-          "properties": {
-            "fetch_version": true
-          },
           "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "angular"
