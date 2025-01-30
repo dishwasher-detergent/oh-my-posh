@@ -14,7 +14,7 @@
     "spotify": "#1DB954",
     "dotnet": "#502eca",
     "npm": "#8bbf45",
-    "node": "#c40011",
+    "node": "#c40011"
   },
   "terminal_background": "p:background",
   "console_title_template": "{{ .UserName }}@{{ .HostName }}",
@@ -52,15 +52,15 @@
       "type": "prompt"
     },
     {
-        "alignment": "right",
-        "segments": [
-            {
-                "foreground": "p:white",
-                "template": " {{ .FormattedMs }} ",
-                "type": "executiontime"
-            }
-        ],
-        "type": "prompt"
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "p:white",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
     },
     {
       "alignment": "left",
