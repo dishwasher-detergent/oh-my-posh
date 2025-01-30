@@ -41,8 +41,9 @@
             {
                 "foreground": "p:white",
                 "properties": {
-                    "style": "roundrock",
-                    "threshold": 0
+                    "style": "austin",
+                    "threshold": 0,
+                    "always_enabled": true
                 },
                 "template": " {{ .FormattedMs }} ",
                 "type": "executiontime"
