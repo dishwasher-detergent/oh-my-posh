@@ -14,7 +14,8 @@
     "spotify": "#1DB954",
     "dotnet": "#502eca",
     "npm": "#8bbf45",
-    "node": "#c40011"
+    "node": "#c40011",
+    "angular": "#1976d2"
   },
   "terminal_background": "p:background",
   "console_title_template": "{{ .UserName }}@{{ .HostName }}",
@@ -36,20 +37,20 @@
       "type": "prompt"
     },
     {
-        "alignment": "right",
-        "segments": [
-            {
-                "foreground": "p:white",
-                "properties": {
-                    "style": "austin",
-                    "threshold": 0,
-                    "always_enabled": true
-                },
-                "template": " {{ .FormattedMs }} ",
-                "type": "executiontime"
-            }
-        ],
-        "type": "prompt"
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "p:white",
+          "properties": {
+            "style": "austin",
+            "threshold": 0,
+            "always_enabled": true
+          },
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
     },
     {
       "alignment": "left",
@@ -113,6 +114,13 @@
           "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "npm"
+        },
+        {
+          "type": "angular",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "p:angular",
+          "template": "  {{ .Full }} "
         }
       ],
       "type": "prompt"
