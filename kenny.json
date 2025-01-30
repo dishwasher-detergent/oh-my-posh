@@ -36,20 +36,19 @@
       "type": "prompt"
     },
     {
-      "alignment": "right",
-      "segments": [
-        {
-          "foreground": "p:white",
-          "properties": {
-            "style": "austin",
-            "threshold": 0,
-            "always_enabled": true
-          },
-          "template": " {{ .FormattedMs }} ",
-          "type": "executiontime"
-        }
-      ],
-      "type": "prompt"
+        "alignment": "right",
+        "segments": [
+            {
+                "foreground": "p:white",
+                "properties": {
+                    "style": "roundrock",
+                    "threshold": 0
+                },
+                "template": " {{ .FormattedMs }} ",
+                "type": "executiontime"
+            }
+        ],
+        "type": "prompt"
     },
     {
       "alignment": "left",
