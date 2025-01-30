@@ -21,6 +21,22 @@
   "blocks": [
     {
       "alignment": "left",
+      "segments": [
+        {
+          "type": "spotify",
+          "style": "plain",
+          "foreground": "p:spotify",
+          "properties": {
+            "playing_icon": " ",
+            "paused_icon": " ",
+            "stopped_icon": " "
+          }
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
       "newline": true,
       "segments": [
         {
@@ -36,20 +52,15 @@
       "type": "prompt"
     },
     {
-      "alignment": "right",
-      "segments": [
-        {
-          "type": "spotify",
-          "style": "plain",
-          "foreground": "p:spotify",
-          "properties": {
-            "playing_icon": " ",
-            "paused_icon": " ",
-            "stopped_icon": " "
-          }
-        }
-      ],
-      "type": "prompt"
+        "alignment": "right",
+        "segments": [
+            {
+                "foreground": "p:white",
+                "template": " {{ .FormattedMs }} ",
+                "type": "executiontime"
+            }
+        ],
+        "type": "prompt"
     },
     {
       "alignment": "left",
