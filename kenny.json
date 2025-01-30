@@ -93,8 +93,7 @@
           "properties": {
             "fetch_version": true
           },
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "dotnet"
         },
@@ -103,8 +102,7 @@
           "properties": {
             "fetch_version": true
           },
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "node"
         },
@@ -113,8 +111,7 @@
           "properties": {
             "fetch_version": true
           },
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "npm"
         },
@@ -123,8 +120,7 @@
           "properties": {
             "fetch_version": true
           },
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "template": "  {{ .Full }} ",
           "type": "angular",
         }
