@@ -52,17 +52,7 @@
       ],
       "type": "prompt"
     },
-    {
-      "alignment": "right",
-      "segments": [
-        {
-          "foreground": "p:white",
-          "template": " {{ .FormattedMs }} ",
-          "type": "executiontime"
-        }
-      ],
-      "type": "prompt"
-    },
+
     {
       "alignment": "left",
       "newline": true,
