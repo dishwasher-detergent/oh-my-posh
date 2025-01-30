@@ -24,23 +24,6 @@
       "newline": true,
       "segments": [
         {
-          "type": "spotify",
-          "style": "plain",
-          "foreground": "p:spotify",
-          "properties": {
-            "playing_icon": " ",
-            "paused_icon": " ",
-            "stopped_icon": " "
-          }
-        }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
           "foreground": "p:white",
           "properties": {
             "time_format": "January 2, 2006 @ 15:04:05"
@@ -52,7 +35,17 @@
       ],
       "type": "prompt"
     },
-
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "p:white",
+          "template": " {{ .FormattedMs }} ",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
     {
       "alignment": "left",
       "newline": true,
